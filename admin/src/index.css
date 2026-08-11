@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+
+
+/* Utilities classes */
+.active {
+	color: #0BC1DF;
+}
+
+/* Buttons */
+.submit {
+	background: #0BC1DF;
+	color: white;
+	border-radius: 8px;
+	padding: 0.4rem;
+	cursor: pointer;
+}
+
+.cancel {
+	color: white;
+	background-color: red;
+	border-radius: 8px;
+	padding: 0.4rem;
+	cursor: pointer;
+}
+
+.submit:hover {
+	background-color: #27cde6;
+}
+
+.cancel:hover {
+	background-color: rgb(241, 42, 42);
+}
+
+.reset {
+	background-color: #0BC1DF;
+	color: white;
+	border-radius: 8px;
+	padding: 0.4rem;
+	cursor: pointer;
+}
+
+.search {
+	background-color: #0BC1DF;
+	color: white;
+	border-radius: 8px;
+	padding: 0.4rem;
+	cursor: pointer;
+}
+
+.add {
+	background-color: #5C636A;
+	color: white;
+	border-radius: 8px;
+	padding: 0.4rem;
+	cursor: pointer;
+}
+
+.add:hover {
+	background-color: #6d737b;
+}
+
+
+/* hr */
+
+.horizontalRuler {
+	color: #d5d7d9;
+	margin: 1rem 0rem;
+}
+
+.borderRadius {
+	border-radius: 8px;
+}
+
+
+/* Inputs */
+
+.input {
+	width: 100%;
+	border: 1px solid #d5d7d9;
+	border-radius: 4px;
+	padding-left: 1rem;
+	height: 2.5rem;
+	outline: none;
+}
+
+.textarea {
+	width: 100%;
+	border: 1px solid #d5d7d9;
+	border-radius: 4px;
+	padding-left: 1rem;
+	height: 5rem;
+	outline: none;
+}
+
+/* custom padding */
+.cp {
+	padding: 1rem;
+}
+
+.cpt {
+	padding-top: 1rem;
+}
+
+.cpb {
+	padding-bottom: 1rem;
+}
+
+.cpl {
+	padding-left: 1rem;
+}
+
+.cpr {
+	padding-right: 1rem;
+}
+
+/* custom margin */
+
+.cm {
+	margin: 1rem;
+}
+
+.cml {
+	margin-left: 1rem;
+}
+
+.cmr {
+	margin-right: 1rem;
+}
+
+.cmt {
+	margin-top: 1rem;
+}
+
+.cmb {
+	margin-bottom: 1rem;
+}
+
+/* Label */
+
+.label {
+	font-size: small;
+}
+
+.span {
+	color: red;
+}
+
+.customeErrorMessage {
+	color: red;
+	font-size: smaller;
+}
+
+.customeErrorInput {
+	border: 1px solid red !important;
+}
+
+
+/* font */
+
+.font-weight-100 {
+	font-weight: 100;
+}
