@@ -152,14 +152,14 @@ export default function FacultyPage() {
                     </div>
 
                     <div className="flex items-center justify-between text-xs border-b border-border pb-3">
-                      <span className="text-muted-foreground">Kota / Institutional Legacy:</span>
-                      <span className="font-semibold text-primary">{f.legacy}</span>
+                      <span className="text-muted-foreground">Key Achievement:</span>
+                      <span className="font-semibold text-primary">{f.achievements[0].substring(0, 30)}...</span>
                     </div>
 
                     <div>
                       <p className="text-xs font-semibold text-foreground mb-1">Ranks Mentored:</p>
                       <span className="inline-block rounded-lg bg-primary-soft px-2.5 py-1 text-xs font-bold text-primary">
-                        {f.ranksProduced}
+                        {f.ranksMentored}
                       </span>
                     </div>
 

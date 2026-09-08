@@ -45,7 +45,7 @@ export default function ResultsPage() {
     const matchesExam =
       selectedExam === "all" ? true : t.exam.toLowerCase().includes(selectedExam.toLowerCase());
     const matchesYear =
-      selectedYear === "All Years" ? true : t.year === selectedYear;
+      selectedYear === "All Years" ? true : t.year.toString() === selectedYear;
     return matchesExam && matchesYear;
   });
 
@@ -168,7 +168,7 @@ export default function ResultsPage() {
                         {topper.name}
                       </h3>
                       <p className="text-xs font-semibold text-primary">{topper.exam}</p>
-                      <p className="text-[11px] text-muted-foreground mt-0.5">{topper.course}</p>
+                      <p className="text-[11px] text-muted-foreground mt-0.5">{topper.courseTaken}</p>
                     </div>
                   </div>
 
@@ -180,7 +180,7 @@ export default function ResultsPage() {
                     </div>
                     <div className="flex items-center justify-between">
                       <span className="text-muted-foreground">Roll Number:</span>
-                      <span className="font-mono font-medium text-primary">{topper.rollNo}</span>
+                      <span className="font-mono font-medium text-primary">{topper.id.toUpperCase().substring(0, 8)}</span>
                     </div>
                   </div>
 
@@ -264,7 +264,7 @@ export default function ResultsPage() {
               <div className="flex h-full flex-col justify-between rounded-3xl border border-border bg-card p-6 shadow-soft">
                 <div>
                   <div className="flex items-center gap-1 text-accent">
-                    {Array.from({ length: t.rating }).map((_, i) => (
+                    {Array.from({ length: 5 }).map((_, i) => (
                       <span key={i}>★</span>
                     ))}
                   </div>
@@ -276,7 +276,7 @@ export default function ResultsPage() {
                 <div className="mt-6 border-t border-border pt-4">
                   <p className="font-display text-sm font-bold text-foreground">{t.name}</p>
                   <p className="text-xs font-semibold text-primary">{t.role}</p>
-                  <p className="text-[11px] text-muted-foreground">{t.selection}</p>
+                  <p className="text-[11px] text-muted-foreground">{t.rank} in {t.exam}</p>
                 </div>
               </div>
             </Reveal>
