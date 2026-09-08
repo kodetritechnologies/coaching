@@ -57,7 +57,7 @@ export function Hero() {
                   <span className="font-semibold text-primary">[{n.category?.name || n.category}]</span> {n.title}
                 </span>
               ))}
-            {/* @ts-ignore */}
+              {/* @ts-ignore */}
             </marquee>
           </div>
         </div>
@@ -65,18 +65,6 @@ export function Hero() {
 
       <div className="section-shell relative grid items-center gap-12 py-14 lg:grid-cols-[1.08fr_1fr] lg:py-20">
         <div>
-          <Reveal>
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary-soft px-3.5 py-1.5 text-xs font-bold text-primary">
-                <ShieldCheck className="h-4 w-4" />
-                ISO 9001:2015 Certified Coaching Institute
-              </span>
-              <span className="inline-flex items-center gap-1 rounded-full bg-accent/20 px-3 py-1 text-xs font-bold text-accent">
-                <Sparkles className="h-3 w-3" /> Admissions Open 2026-27
-              </span>
-            </div>
-          </Reveal>
-
           <Reveal delay={80}>
             <h1 className="mt-5 font-display text-4xl font-extrabold leading-[1.12] text-foreground sm:text-5xl xl:text-[3.35rem]">
               Building Ranks &amp; Character for{" "}
@@ -99,26 +87,7 @@ export function Hero() {
               <ActionButton onClick={() => setEnquiryOpen(true)} variant="outline" size="lg">
                 <CalendarCheck className="h-4 w-4" /> Book Free Demo Class
               </ActionButton>
-              <ActionButton to="/scholarship" variant="ghost" size="lg" className="text-primary font-bold">
-                VSAT Scholarship Test →
-              </ActionButton>
             </div>
-          </Reveal>
-
-          <Reveal delay={280}>
-            <dl className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4">
-              {stats.map((s) => (
-                <div
-                  key={s.label}
-                  className="rounded-2xl border border-border bg-card px-4 py-4 shadow-soft transition-all hover:border-primary/40 hover:shadow-lift"
-                >
-                  <dt className="font-display text-2xl sm:text-3xl font-extrabold text-primary">
-                    <Counter value={s.value} suffix={s.suffix} />
-                  </dt>
-                  <dd className="mt-1 text-xs font-medium text-muted-foreground">{s.label}</dd>
-                </div>
-              ))}
-            </dl>
           </Reveal>
         </div>
 
