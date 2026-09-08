@@ -136,7 +136,7 @@ export default function AdmissionsPage() {
                     <td className="p-4 sm:p-5 font-bold text-foreground">{c.name}</td>
                     <td className="p-4 sm:p-5 text-primary font-medium">{c.targetExam}</td>
                     <td className="p-4 sm:p-5 text-muted-foreground">{c.duration}</td>
-                    <td className="p-4 sm:p-5 font-display font-bold text-primary text-base">{c.fee}</td>
+                    <td className="p-4 sm:p-5 font-display font-bold text-primary text-base">{c.feeOneTime}</td>
                     <td className="p-4 sm:p-5 text-muted-foreground">3 Easy EMI Instalments</td>
                     <td className="p-4 sm:p-5 text-right">
                       <ActionButton

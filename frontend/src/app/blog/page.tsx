@@ -82,7 +82,7 @@ export default function BlogIndexPage() {
               </span>
               <span>·</span>
               <span className="flex items-center gap-1">
-                <Calendar className="h-3.5 w-3.5 text-primary" /> {featuredPost.date}
+                <Calendar className="h-3.5 w-3.5 text-primary" /> {featuredPost.publishDate}
               </span>
             </div>
 
@@ -176,7 +176,7 @@ export default function BlogIndexPage() {
                 <div className="mt-6 border-t border-border pt-4 flex items-center justify-between">
                   <div className="text-xs text-muted-foreground">
                     <p className="font-semibold text-foreground">{post.author}</p>
-                    <p className="text-[10px]">{post.date}</p>
+                    <p className="text-[10px]">{post.publishDate}</p>
                   </div>
 
                   <Link href={`/blog/${post.slug}` as any}

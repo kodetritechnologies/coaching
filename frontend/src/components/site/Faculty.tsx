@@ -43,11 +43,11 @@ export function Faculty() {
                       <span className="font-bold text-foreground">{m.experience}</span>
                     </div>
                     <div className="flex items-center justify-between text-muted-foreground">
-                      <span>Ex-Institute:</span>
-                      <span className="font-semibold text-primary">{m.exInstitute || (m as any).legacy}</span>
+                      <span>Achievement:</span>
+                      <span className="font-semibold text-primary">{m.achievements[0].substring(0, 20)}...</span>
                     </div>
                     <div className="border-t border-border pt-2 text-[11px] text-muted-foreground">
-                      <span className="font-semibold text-foreground">Top Mentored:</span> {m.ranksProduced}
+                      <span className="font-semibold text-foreground">Top Mentored:</span> {m.ranksMentored}
                     </div>
                   </div>
                 </div>

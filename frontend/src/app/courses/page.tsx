@@ -135,7 +135,7 @@ export default function CoursesDirectoryPage() {
                   </p>
 
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                    {course.description}
+                    {course.overview}
                   </p>
 
                   {/* Highlights Bullet List */}

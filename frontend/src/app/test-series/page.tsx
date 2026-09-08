@@ -128,7 +128,7 @@ export default function TestSeriesPage() {
                       {pkg.exam}
                     </span>
                     <span className="text-xs font-semibold text-muted-foreground">
-                      {pkg.mode}
+                      {pkg.badge}
                     </span>
                   </div>
 

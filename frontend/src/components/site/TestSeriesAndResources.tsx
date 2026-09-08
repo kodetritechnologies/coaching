@@ -27,7 +27,7 @@ export function TestSeriesAndResources() {
                     </span>
                     <h3 className="mt-2 font-display text-lg font-bold text-foreground">{s.name}</h3>
                     <p className="mt-2 text-xs text-accent font-semibold">{s.testsCount}</p>
-                    <p className="mt-1 text-xs text-muted-foreground">{s.mode}</p>
+                    <p className="mt-1 text-xs text-muted-foreground">{s.badge}</p>
                   </div>
                   <div className="mt-6 flex items-center justify-between border-t border-border pt-5">
                     <span className="font-display text-xl font-bold text-primary">{s.price}</span>

@@ -18,8 +18,8 @@ import { blogPostsData, coursesData } from "@/data/coachingData";
 
 
 
-export default function BlogPostDetailPage() {
-  const { slug } = Route.useParams();
+export default function BlogPostDetailPage({ params }: { params: { slug: string } }) {
+  const { slug } = params;
   const post = blogPostsData.find((p) => p.slug === slug) || blogPostsData[0];
 
   const handleShare = () => {
@@ -46,7 +46,7 @@ export default function BlogPostDetailPage() {
             <User className="h-4 w-4 text-accent" /> {post.author}
           </span>
           <span className="flex items-center gap-1.5">
-            <Calendar className="h-4 w-4 text-accent" /> {post.date}
+            <Calendar className="h-4 w-4 text-accent" /> {post.publishDate}
           </span>
           <span className="flex items-center gap-1.5">
             <Clock className="h-4 w-4 text-accent" /> {post.readTime}
@@ -150,7 +150,7 @@ export default function BlogPostDetailPage() {
                 {coursesData[0].name}
               </h4>
               <p className="mt-2 text-xs text-muted-foreground">
-                {coursesData[0].description}
+                {coursesData[0].subtitle}
               </p>
               <div className="mt-4">
                 <ActionButton to={`/courses/${coursesData[0].slug}` as any} variant="primary" size="sm" className="w-full">
